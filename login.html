@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="/navbar.css" />
+    <style>
+      #login {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        justify-content: space-around;
+      }
+      #login_img {
+        display: block;
+        justify-content: end;
+        width: 50%;
+        position: absolute;
+        right: 0;
+      }
+      #first {
+        position: relative;
+        width: 50%;
+      }
+      img {
+        width: 100%;
+      }
+      #second {
+        width: 30%;
+        padding: 10px 0px 40px 60px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #reg_button {
+        width: 40%;
+        height: 30px;
+        color: teal;
+        border: 1px solid teal;
+      }
+      #loginData > input {
+        width: 60%;
+        height: 30px;
+        margin-top: -8px;
+      }
+      #login_button {
+        width: 62%;
+        height: 34px;
+        background-color: rgb(12, 170, 170);
+        color: white;
+        border: 0;
+        border-radius: 10px;
+        font-size: 16px;
+      }
+      #google_button {
+        width: 62%;
+        height: 34px;
+        background-color: white;
+        color: rgb(82, 66, 66);
+        border: 1px solid rgb(216, 214, 214);
+        border-radius: 10px;
+        font-size: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <img
+          src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+          alt="navLogo"
+        />
+      </div>
+
+      <div id="navJob">
+        <div>Jobs</div>
+        <div>Companies</div>
+        <div>Services</div>
+        <div>Resources</div>
+      </div>
+      <div id="navbtn">
+        <button><a href="/Register/login.html">Login</a></button>
+        <button><a href="/Register/signup.html">Register</a></button>
+      </div>
+      <div>
+        <select name="employ" id="navEmploy">
+          <option value="">For employers</option>
+          <option value="Buy online">Buy online</option>
+          <option value="our hiring solutions">Our Hiring Solutions</option>
+          <option value="Employer Login">Employer Login</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div id="login">
+      <div id="first">
+        <div id="content">
+          <h3>New to Naukri?</h3>
+          <p>✔ One click using naukri profile.</p>
+          <p>✔ Get relevant job recommendations.</p>
+          <p>✔ Showcase profile to top companies and consultants.</p>
+          <p>✔ Know application status on applied jobs.</p>
+          <button id="reg_button">
+            <a href="/Register/signup.html">Register for Free</a>
+          </button>
+        </div>
+        <div id="login_img">
+          <img src="https://static.naukimg.com/s/5/105/i/register.png" alt="" />
+        </div>
+      </div>
+      <div id="second">
+        <form id="loginData">
+          <h3>Login</h3>
+          <p>Email ID / Username</p>
+          <input
+            type="text"
+            id="email"
+            placeholder="Enter Email ID / Username"
+          />
+          <p>Password</p>
+          <input type="text" id="password" placeholder="Enter Password" />
+          <h5>Forget Password?</h5>
+          <button id="login_button">Login</button>
+          <p>Use OTP to login</p>
+
+          <button id="google_button">Sign in with Google</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var details = JSON.parse(localStorage.getItem("userData"));
+  var form = document.querySelector("form");
+
+  var loginbtn = document.querySelector("#login_button");
+  loginbtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    var username = form.email.value;
+    var password = form.password.value;
+
+    var flag = true;
+    if (username != "" && password != "") {
+      for (var i = 0; i < details.length; i++) {
+        if (details[i].name == username && details[i].password == password) {
+          alert("Login successfully");
+          flag = false;
+          window.location.href = "./index.html"
+          break;
+        }
+      }
+    } else {
+      alert("please fill the details first");
+      flag = false;
+    }
+    if (flag) {
+      alert("Wrong Credintials Entered");
+    }
+  });
+</script>

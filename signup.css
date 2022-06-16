@@ -1,0 +1,92 @@
+
+#signup {
+    background-color: #fafbfe;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+#information {
+  width: 20%;
+  background-color: white;
+  /* position: fixed; */
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#information > img {
+  display: block;
+  margin: auto;
+}
+#form_wala {
+  width: 40%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 30px;
+}
+#details > h1 {
+  text-align: center;
+}
+input {
+  height: 35px;
+  width: 75%;
+  font-size: 16px;
+}
+
+#submit_button {
+  width: 15%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+}
+#work_status {
+  display: flex;
+}
+#work_status > div {
+  width: 35%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#work_status > div > p {
+  margin-top: -10px;
+}
+h3 {
+  color: rgb(34, 134, 134);
+}
+#resume {
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+  height: 30px;
+  border: 0;
+}
+#register_wow {
+  color: white;
+  background-color: blue;
+  border-radius: 12px;
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
+  border: 0;
+}
+#rData {
+  font-size: 12px;
+  color: grey;
+}
+
+.term {
+  color: rgb(33, 172, 172);
+}
+#google {
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  border: 0;
+
+  width: 70px;
+  height: 26px;
+}
+a{
+    text-decoration: none;
+}

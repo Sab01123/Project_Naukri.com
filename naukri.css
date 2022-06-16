@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+  }
+  #body_Content {
+    background-color: #f4f4f4;
+  }
+  
+  #mainNavbar {
+    background: rgba(163, 222, 230, 0.753);
+backdrop-filter: blur(5px);
+  }
+  #Navbar {
+    width: 65%;
+    margin: auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+  .jobs {
+    margin-right: 60px;
+    color: white;
+  }
+  #category {
+    width: 70%;
+    margin: auto;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #input_Section {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+  }
+  #different_jobs {
+    display: flex;
+    justify-content: start;
+    height: 35px;
+    align-items: center;
+  }
+  .byChoice {
+    margin-right: 14px;
+    margin-top: 6px;
+    font-size: 15px;
+    color: white;
+
+  }
+  #Bychoice {
+    width: 70%;
+  }
+  .advance {
+    margin-left: 83%;
+    color: white;
+  }
+  #input_together {
+    width: 80%;
+    border: 3px solid grey;
+  }
+  #search_jobs {
+    width: 59%;
+    height: 29px;
+  }
+  #search_location {
+    width: 192px;
+    height: 29px;
+  }
+  .browse {
+    margin-top: 50px;
+    color: white;
+    font-size: 18px;
+  }
+  #input_Section > input,
+  input_Section > button {
+    height: 30px;
+  }
+  #search_job_details {
+    width: 20%;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(58, 182, 182);
+  }
+  #reister_Section {
+    width: 25%;
+    background-color: white;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+  }
+  #register {
+    display: block;
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    background-color: rgb(255, 165, 0);
+    color: white;
+    border: 0;
+    height: 50px;
+  }
+  #info {
+    text-align: center;
+  }
+  .or {
+    margin: 10px 0px;
+    color: grey;
+    font-size: 20px;
+  }
+  .cv {
+    font-size: 23px;
+    color: rgb(9, 192, 192);
+  }
+  .cv + p {
+    color: grey;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .profile {
+    color: grey;
+    font-size: 19px;
+  }
+  
+  #img_pack {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+  #jobsincompany {
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 20px;
+  }
+  #company {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+  }
+  #company > div {
+    margin: auto;
+  }
+  #det {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  #company > div > p {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #browse_job_by_location > img {
+    height: 200px;
+    width: 70%;
+    background-color: white;
+  }
+  #Cname {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 40px;
+    background-color: white;
+  
+    justify-content: space-between;
+  }
+  #location_job {
+    margin-left: 15%;
+    margin-top: 25px;
+    background-color: white;
+  }
+  .djobs {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+  
+    margin-top: 25px;
+  }
+  .djobs > div {
+    width: 45%;
+    padding-bottom: 20px;
+  }
+  .functional,
+  .industries {
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    line-height: 30px;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    height: 45px;
+  }
+  .area {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+    color: rgb(35, 156, 156);
+  }
+  
+  .headerCompany {
+    display: flex;
+    justify-content: end;
+    color: rgb(35, 156, 156);
+    margin-top: 10px;
+  }
+  #bigBox{
+    margin-top: 20px;
+    background-image: url("https://d1csarkz8obe9u.cloudfront.net/posterpreviews/linkedin%2C-event-design-template-9ea8946b86bda7ca65cdbf18e7ab21b1_screen.jpg?ts=1593443473");
+  }
+ 
+  

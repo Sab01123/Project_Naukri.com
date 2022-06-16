@@ -1,0 +1,351 @@
+#searchBox {
+    border: 1px solid rgb(224, 217, 217);
+    width: 60%;
+    height: 64px;
+    display: flex;
+    margin: auto;
+    border-radius: 20px;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #searchBox > div {
+    font-size: 18px;
+    color: grey;
+  }
+  #navExp {
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    border-left: 1px solid rgb(224, 217, 217);
+    border-right: 1px solid rgb(224, 217, 217);
+    color: grey;
+  }
+  #searchBox > button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    background-color: rgb(58, 115, 240);
+    color: white;
+    cursor: pointer;
+  }
+  #getBox {
+    width: 50%;
+    height: 150px;
+    border: 1px dashed grey;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #getBox > div > button {
+    padding: 15px 40px;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(248, 111, 47);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #getBox > div > p:hover {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #getBox > div > p:first-child {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  #navbtn > button:last-child:hover,
+  #getBox > div > button:hover,
+  #searchBox > button:hover,#viewCards>div>button:hover,#viewAll:hover {
+    background-color: teal;
+    color: white;
+  }
+  #getBox + h1,#remote+h1,#mnc+h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+#remote{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  margin: auto;
+}
+#remote>img{
+  width: 100%;
+}
+#remote>div{
+/* border: 1px solid blueviolet; */
+text-align: center;
+line-height: 10px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+.fa-solid{
+color: grey;
+font-size: 16px;
+}
+#mnc{
+width: 80%;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto;
+gap: 20px;
+margin: auto;
+text-align: center;
+line-height: 10px;
+}
+#mnc>div{
+width: 240px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.mncImages{
+display: flex;
+width: 46px;
+}
+.mncImages>img{
+/* border: 1px solid red; */
+width: 100%;
+padding-left: 10px;
+}
+#viewCards{
+width: 80%;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: auto;
+gap: 20px;
+margin: auto;
+text-align: center;
+line-height: 10px;
+}
+#viewCards>div{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#viewCards>img{
+width: 100%;
+}
+#viewCards>div>img+p{
+margin-top: 40px;
+font-size: 18px;
+font-weight: bold;
+}
+#viewCards>div>img+p+p{
+color: grey;
+}
+#viewCards>div>img+p+p+p{
+margin-top: 40px;
+color: grey;
+}
+#viewCards>div>img+p+p+p+p{
+color: grey;
+}
+#viewCards>div>button{
+color: teal;
+padding: 10px 26px;
+border: 0;
+border-radius: 20px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+#remote>div>p,#mnc>div>p{
+color: grey;}
+#viewAll,#allcomp{
+padding: 10px 40px;
+font-weight: bold;
+font-size: 18px;
+color: teal;
+border: 1px solid teal;
+border-radius: 20px;
+display: block;
+margin: auto;
+margin-top: 30px;
+}
+#discover{
+width: 70%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 30px;
+}
+
+#discover>div:first-child{
+background-color: rgb(247, 225, 229);
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;}
+#discover>div:last-child{
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+#dis{
+color: rgb(87, 25, 25);
+width: 80%;
+text-align: center;
+}
+#dis>p{
+color: rgb(68, 36, 36);
+}
+#discover>div>img{
+width: 80%;
+}
+#fullStack{
+width: 60%;
+height: 400px;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: auto;
+gap: 20px;
+margin: auto;
+text-align: center;
+justify-content: center;
+align-items: center;
+line-height: 10px;
+}
+#fullStack>div{
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+height: 100px;
+}
+#discover+h1{
+text-align: center;
+margin: auto;
+margin-top: 50px;
+}
+#all{
+width: 60%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 20px;
+}
+#all>button{
+padding: 5px 10px;
+border-radius: 20px;
+border: 1px solid grey;
+}
+#all>button:first-child{
+border: 1px solid red;
+}
+#all>button:last-child{
+border: 0;
+}
+#einfo{
+width: 80%;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: auto;
+gap: 20px;
+margin: auto;
+text-align: center;
+line-height: 10px;
+margin-top: 40px;
+}
+#einfo>div>img{
+width: 30%;
+}
+#einfo>div>p{
+color: grey;
+font-size: 14px;
+}
+#einfo>div{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#allcomp:hover{
+cursor: pointer;
+background-color: aqua;
+color: black;
+}
+#growCareer{
+width: 80%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+margin: auto;
+margin-top: 40px;
+}
+#growCareer>div{
+
+width: 20%;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#growCareer>div>img{
+width: 80%;
+}
+.pHead{
+font-size: 16px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+#growCareer>div>button{
+padding: 5px 10px;
+border-radius: 20px;
+border: 1px solid rgb(199, 199, 199);
+color: grey;
+cursor: pointer;
+}
+.pHead+h3+p{
+color: grey;
+}
+.pHead+h3{
+margin-top: -10px;
+}
+#growCareer>div:first-child{
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+
+a{
+text-decoration: none;
+/* color: white; */
+}
+#land_head{
+margin: auto;
+text-align: center;
+margin-top: 40px;
+}
+#stand{
+width: 80%;
+display: flex;
+margin: auto;
+margin-top: 40px;
+justify-content: space-around;
+background-color: #f7f8ff;
+}
+#stand>div:first-child{
+margin-top: 60px;
+width: 40%;
+}
+#stand>div:last-child{
+width: 40%;
+
+}
+#standLow{
+display: flex;
+justify-content: space-between;
+
+}
+#imagy{
+width: 20%;
+padding: 5px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#scannerimg{
+width: 100%;
+}
+#scannerinp{
+height: 30px;
+margin-bottom: 20px;
+border: 1px solid rgb(175, 168, 168);
+border-radius: 20px;
+}
+#abovefooter{
+margin-top: 40px;
+}
+.searchJob{
+  padding: 20px;
+  border: 0;
+  font-size: 16px;
+}

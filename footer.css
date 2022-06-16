@@ -1,0 +1,49 @@
+#footer {
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+margin-top: 30px;
+  }
+  
+  #footermid {
+    
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footermid>div>p{
+    cursor: pointer;
+  }
+  #footermid>div>p:hover{
+    color: blue;
+  }
+ 
+  #contactlogo {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+  #contactlogo,#footerApply>img{
+    cursor: pointer;
+  }
+  #footerlogo+p{
+text-align: center;
+  }
+  #footerlogo{
+ width: 120%;
+  }
+  #footerlogo>img{
+    width: 100%;
+  }
+  #footerApply{
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  #lastline{
+    margin-top: 40px;
+  }
+  

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employ login</title>
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/footer.css">
+    <style>
+      #login {
+        
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        justify-content: space-around;
+      }
+      #login_img{
+          display: block;
+          justify-content: end;
+        width: 50%;
+        position: absolute;
+        right: 0;
+    }
+    #first{
+        position: relative;
+        width: 50%;
+    }
+    img{
+          width: 100%;
+        
+      }
+      #second{
+        width: 30%;
+        padding: 10px 0px 40px 60px ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #reg_button{
+        width: 40%;
+        height: 30px;
+        color: teal;
+        border: 1px solid teal;
+      }
+      #loginData>input{
+        width: 60%;
+        height: 30px;
+        margin-top: -8px;
+      }
+      #login_button{
+        width: 62%;
+        height: 34px;
+        background-color: rgb(12, 170, 170);
+        color: white;
+        border: 0; 
+        border-radius: 10px;
+        font-size: 16px;
+      }
+      #google_button{
+        width: 62%;
+        height: 34px;
+       background-color: white;
+        color: rgb(82, 66, 66);
+        border: 1px solid rgb(216, 214, 214); 
+        border-radius: 10px;
+        font-size: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      a{
+        text-decoration: none;
+      }
+      #footerApply>img{
+      width: 50%;
+      }
+   
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+        <div>
+          <img
+            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+            alt="navLogo"
+          />
+        </div>
+  
+        <div id="navJob">
+          <div>Jobs</div>
+          <div>Companies</div>
+          <div>Services</div>
+          <div>Resources</div>
+        </div>
+        <div id="navbtn">
+          <button><a href="/Register/login.html">Login</a></button>
+          <button><a href="/Register/signup.html">Register</a></button>
+        </div>
+        <div>
+          <select name="employ" id="navEmploy">
+            <option value="">For employers</option>
+            <option value="Buy online">Buy online</option>
+            <option value="our hiring solutions">Our Hiring Solutions</option>
+            <option value="Employer Login">Employer Login</option>
+          </select>
+        </div>
+      </div>
+
+    <!-- body -->
+    <div id="login">
+    
+      <div id="second">
+        <form id="loginData">
+          <h3>Login</h3>
+          <p>Email ID / Employ Username</p>
+          <input type="email" placeholder="Enter Email ID / Username" />
+          <p>Password</p>
+          <input type="text" placeholder="Enter Password" />
+          <h5>Forget Password?</h5>
+          <button id="login_button">Login</button>
+          <p>Use OTP to login</p>
+
+      
+
+          <button id="google_button">Sign in with Google</button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+      <div id="footerfirst">
+        <div id="footerlogo">
+          <img
+            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+            alt="logo"
+          />
+        </div>
+        <p>Connect with us</p>
+        <div id="contactlogo">
+          <img
+            src="https://static.naukimg.com/s/0/0/i/new-homepage/facebook.svg"
+            alt="facebook"
+          />
+          <img
+            src="https://static.naukimg.com/s/0/0/i/new-homepage/instagram.svg"
+            alt="instagram"
+          />
+          <img
+            src="https://static.naukimg.com/s/0/0/i/new-homepage/twitter.svg"
+            alt="twitter"
+          />
+          <img
+            src="https://static.naukimg.com/s/0/0/i/new-homepage/linkedin.svg"
+            alt="linkedin"
+          />
+        </div>
+      </div>
+      <div id="footermid">
+        <div>
+          <p>About us</p>
+          <p>Career</p>
+          <p>Employer home</p>
+          <p>Sitemap</p>
+        </div>
+        <div>
+          <p>Help center</p>
+          <p>Summons/Notices</p>
+          <p>Grievances</p>
+          <p>Report issues</p>
+        </div>
+        <div>
+          <p>Privacy policy</p>
+          <p>Terms & conditions</p>
+          <p>Fraud alerts</p>
+          <p>Trust & safety</p>
+        </div>
+      </div>
+      <div id="footerApply">
+        <h3>Apply on the go</h3>
+        <p>Get real-time job updates on our App</p>
+        <img
+          src="https://static.naukimg.com/s/0/0/i/download-app-link/Gplay.png"
+          alt="Google"
+        />
+        <img
+          src="https://static.naukimg.com/s/0/0/i/download-app-link/Appstore.png"
+          alt="apple"
+        />
+      </div>
+    </div>
+    <hr id="lastline">
+  </body>
+</html>

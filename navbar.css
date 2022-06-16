@@ -1,0 +1,72 @@
+#navbar {
+    display: flex;
+    width: 80%;
+    /* height: 40px; */
+    margin: auto;
+    justify-content: space-between;
+    /* position: sticky; */
+    /* position: static; */
+    /* position: fixed; */
+   
+  }
+  #navJob {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  #navJob > div {
+    font-size: 18px;
+    color: grey;
+  }
+  #navbtn > button {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 0;
+    border-radius: 20px;
+  }
+  #navbtn {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 20px;
+  }
+  #navbtn > button:first-child {
+    color: rgb(122, 122, 226);
+    border: 1px solid rgb(122, 122, 226);
+    font-size: 16px;
+  }
+  #navbtn > button:first-child:hover {
+    background-color: rgb(133, 238, 164);
+    color: black;
+    border: 0;
+    cursor: pointer;
+  }
+  #navbtn > button:last-child {
+    color: white;
+    background-color: rgb(241, 77, 77);
+    font-size: 16px;
+
+  }
+  #navEmploy {
+    padding: 14px;
+    border: 0;
+    font-size: 16px;
+    margin-top: 2px;
+  }
+
+  #navJob > div:first-child:hover {
+    cursor: pointer;
+  }
+  /* #navbar + div {
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+  } */
+  #navbar + div > h3 {
+    margin-top: -10px;
+    color: grey;
+  }
+ 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="/navbar.css">
+    <title>Signup</title>
+  </head>
+  <body>
+    <div id="navbar">
+        <div>
+          <img
+            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+            alt="navLogo"
+          />
+        </div>
+  
+        <div id="navJob">
+          <div>Jobs</div>
+          <div>Companies</div>
+          <div>Services</div>
+          <div>Resources</div>
+        </div>
+        <div id="navbtn">
+          <button><a href="/Register/login.html">Login</a></button>
+          <button><a href="/Register/signup.html">Register</a></button>
+        </div>
+        <div>
+          <select name="employ" id="navEmploy">
+            <option value="">For employers</option>
+            <option value="Buy online">Buy online</option>
+            <option value="our hiring solutions">Our Hiring Solutions</option>
+            <option value="Employer Login">Employer Login</option>
+          </select>
+        </div>
+      </div>
+    <div id="signup">
+      <div id="information">
+        <img
+          src="https://static.naukimg.com/s/7/104/assets/images/green-boy.c8b59289.svg"
+          alt=""
+        />
+        <h2>On registering, you can</h2>
+        <p>✅ Build your profile and let recruiters find you</p>
+        <p>✅ Get job postings delivered right to your email</p>
+        <p>✅ Find a job and grow your career</p>
+      </div>
+      <div id="form_wala">
+        <form id="details">
+          <h1>Find a job & grow your career</h1>
+          <p>Full Name</p>
+          <input type="text" id="name" placeholder="What is your name?" />
+          <p>Email Id</p>
+          <input type="text" id="email" placeholder="Tell us your Email ID" />
+          <p>We'll send you relevant jobs in your mail</p>
+          <p>Password</p>
+          <input
+            type="text"
+            id="password"
+            minlength="6"
+            placeholder="Create a password for your account"
+          />
+          <p>Minimum 6 character required</p>
+          <input
+            value="+91"
+            type="text"
+            id="mobile"
+            placeholder="Mobile Number"
+          />
+          <p>Recruiters will call you on this number</p>
+        </form>
+
+        Work Status
+        <div id="work_status">
+          <div>
+            <h3>I'm Experienced</h3>
+            <p>I have work experience (excluding internships)</p>
+          </div>
+          <div>
+            <h3>I'm a Fresher</h3>
+            <p>I am a student/ Haven't worked after graduation</p>
+          </div>
+        </div>
+        <p>Current City</p>
+        <input
+          type="text"
+          id="city"
+          placeholder="Mention the city you live in"
+        />
+        <p>Resume</p>
+        <button id="resume">Upload Resume</button
+        ><span id="rData"> DOC, DOCx, PDF, RTF | Max: 2 MB</span>
+        <p>Recruiters give first preference to candidates who have a resume</p>
+
+        <p>
+          By clicking Register, you agree to the
+          <span class="term"> Terms and Conditions</span> &
+          <span class="term">Privacy Policy</span> of Naukri.com
+        </p>
+        <button id="register_wow">Register Now</button>
+      </div>
+      <div id="submit_button">
+        <p>Continue with</p>
+        <button id="google">Google</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var form = document.querySelector("form")
+var arr =  []
+  var registerData = document.querySelector("#register_wow").addEventListener("click",function(event){
+    event.preventDefault()
+   var obj ={
+    name:form.name.value,
+    password:form.password.value
+
+   }
+   arr.push(obj)
+   console.log(arr)
+   if(obj.name =="" || obj.password=="" )
+   {
+    console.log("hohohohoh")
+    alert("User credential cannot be blank")
+   }
+   else{
+    localStorage.setItem("userData",JSON.stringify(arr))
+    alert("Successfully Registered")
+    window.location.href="login.html"
+
+   }
+
+  })
+</script>
