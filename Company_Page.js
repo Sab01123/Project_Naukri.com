@@ -77,7 +77,7 @@ var data = [
     rating: "⭐ 4.4 | 880 reviews",
     claim: "Globally acclaimed tech company since 1991.",
     button: "View jobs",
-    filter: " Financial Services(6)",
+    filter: "Financial Services(6)",
   },
   {
     img_url: "https://img.naukimg.com/logo_images/groups/v2/4264.gif",
@@ -101,7 +101,7 @@ var data = [
     rating: "⭐ 3.9 | 3.5K+ reviews",
     claim: "Global IT Services & consulting company.",
     button: "View jobs",
-    filter: " Indian MNC(4)",
+    filter: "Indian MNC(4)",
   },
   {
     img_url: "https://img.naukimg.com/logo_images/groups/v2/9558.gif",
@@ -125,7 +125,7 @@ var data = [
     rating: "⭐ 3.9 | 1.5K+ reviews",
     claim: "IT services  company since 1996.",
     button: "View jobs",
-    filter: "BPM(12)",
+    filter: "Corporate(3)",
   },
 ];
 
@@ -140,6 +140,124 @@ function fun() {
     displayData(a);
   });
 }
+document.querySelector("#idb").addEventListener("click", fun1);
+function fun1() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "BFSI (4)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#idc").addEventListener("click", fun2);
+function fun2() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Technology(3)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#idd").addEventListener("click", fun3);
+function fun3() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "BPM(12)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id11").addEventListener("click", fun4);
+function fun4() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "IT Services & consulting(16)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id12").addEventListener("click", fun5);
+function fun5() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Analitycs / KPO ? Research (2)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id13").addEventListener("click", fun6);
+function fun6() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Internet(3)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id14").addEventListener("click", fun7);
+function fun7() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Financial Services(6)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id15").addEventListener("click", fun8);
+function fun8() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Telecom / ISP(6)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id20").addEventListener("click", fun11);
+function fun11() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Banking(1)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id16").addEventListener("click", fun12);
+function fun12() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Foreign MNC(16)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id17").addEventListener("click", fun13);
+function fun13() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Indian MNC(4)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id18").addEventListener("click", fun14);
+function fun14() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "Corporate(3)";
+    });
+    displayData(a);
+  });
+}
+document.querySelector("#id33").addEventListener("click", fun15);
+function fun15() {
+  data.filter(function (ele) {
+    var a = data.filter(function (elem) {
+      return elem.filter == "BPM(12)";
+    });
+    displayData(a);
+  });
+}
+
 
 function displayData(data) {
   document.querySelector("#outer").innerHTML = "";

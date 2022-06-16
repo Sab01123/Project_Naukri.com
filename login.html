@@ -125,7 +125,7 @@
           />
           <p>Password</p>
           <input type="text" id="password" placeholder="Enter Password" />
-          <h5>Forget Password?</h5>
+          <h5 id="forget_p"><a href="/forgetpassword.html">Forget Password?</a></h5>
           <button id="login_button">Login</button>
           <p>Use OTP to login</p>
 
@@ -163,4 +163,10 @@
       alert("Wrong Credintials Entered");
     }
   });
+
+  var forget_pass = document.querySelector("#forget_p")
+  forget_pass.addEventListener("click",forgetFun)
+  function forgetFun(){
+    window.loca
+  }
 </script>
