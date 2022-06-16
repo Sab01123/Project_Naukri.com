@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/navbar.css">
-    <style>
-      #try{
-        display: none;
-        width: 2%;
-        border: 1px solid;
-      
-      }
-      #trying:hover+#try{
-        display:block;
-       display: table;
-      
-
-      }
-      #trying{
-        margin-top: 10%;
-      }
-    </style>
-</head>
-<body>
+    <link rel="stylesheet" href="/navbar.css" />
+   
+  </head>
+  <body>
     <div id="navbar">
-        <div>
-          <img
-            src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
-            alt="navLogo"
-          />
-        </div>
-  
-        <div id="navJob">
-          <div>
-          
-           <p id="trying"> Jobs  <br> 
+      <div>
+        <img
+          onclick="window.location.href='index.html'"
+          src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+          alt="navLogo"
+        />
+      </div>
 
-            <div id="try">
-              <p>hi i am trying aaaaaaaaaaa  aaaaaa aaaa</p>
-              <p>welcome to pubG</p>
-           
-           </p> 
-         
-         
-          
+      <div id="navJob">
+        <div id="com1">
+          <p onclick="window.location.href='naukri.html'">Jobs</p>
+
+          <div class="hov1">
+            <h3>Popular categories</h3>
           </div>
-          
+        </div>
+        <div id="com2">
+          <p onclick="window.location.href='navcompnies.html'">companies</p>
+
+          <div class="hov2">
+            <h4>Explore categories</h4>
           </div>
-          <div>Companies</div>
-          <div>Services</div>
-          <div>Resources</div>
         </div>
-        <div id="navbtn">
-          <button onclick="window.location.href='login.html'">Login</button>  
-          <button onclick="window.location.href=`signup.html`">Register</button>
+        <div id="com3">
+          <p onclick="window.location.href='naukri.html'">Services</p>
+
+          <div class="hov3">
+            <h4>Resume writing</h4>
+          </div>
         </div>
-        <div>
-          <select name="employ" id="navEmploy">
-            <option value="">For employers</option>
-            <option value="Buy online">Buy online</option>
-            <option value="our hiring solutions">Our Hiring Solutions</option>
-            <option value="Employer Login">Employer Login</option>
-          </select>
+        <div id="com4">
+          <p onclick="window.location.href='company.html'">Resources</p>
+
+          <div class="hov4">
+            <h4>Free resume_resources</h4>
+          </div>
         </div>
       </div>
-</body>
+      <div id="navbtn">
+        <button onclick="window.location.href='login.html'">Login</button>
+        <button onclick="window.location.href='signup.html'">Register</button>
+      </div>
+      <div>
+        <select name="employ" id="navEmploy">
+          <option value="">For employers</option>
+          <option value="Buy online">Buy online</option>
+          <option value="our hiring solutions">Our Hiring Solutions</option>
+          <option value="Employer Login">Employer Login</option>
+        </select>
+      </div>
+    </div>
+  </body>
 </html>
+<script>
+  document.querySelector("#navEmploy").addEventListener("click", slectFun);
+  function slectFun() {
+    event.preventDefault();
+    let a = document.querySelector("#navEmploy").value;
+    // console.log(a)
+    if (a === "Employer Login") {
+      window.location.href = "employlogin.html";
+    } else {
+      return false;
+    }
+  }
+</script>
