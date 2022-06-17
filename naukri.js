@@ -31,3 +31,14 @@ var data = [
     div.append(img, company);
     document.getElementById("company").append(div);
   });
+  document.querySelector("#navEmploy").addEventListener("click", slectFun);
+  function slectFun() {
+    event.preventDefault();
+    let a = document.querySelector("#navEmploy").value;
+    // console.log(a)
+    if (a === "Employer Login") {
+      window.location.href = "employlogin.html";
+    } else {
+      return false;
+    }
+  }
