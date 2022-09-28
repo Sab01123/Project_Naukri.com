@@ -21,6 +21,7 @@ HTML | CSS | JavaScript |
 ⬤ https://mdn.com
 
 Github link: https://github.com/Sab01123/Project_Naukri.com
+Netlify link: https://sabirafarooq.netlify.app/
 
 <h3>Thank You</h3>
 
